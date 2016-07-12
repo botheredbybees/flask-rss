@@ -9,11 +9,10 @@ RSS_FEEDS = {'bbc': 'http://feeds.bbci.co.uk/news/rss.xml', 'cnn': 'http://rss.c
 
 app = Flask(__name__)
 
-@app.route("/")
-@app.route("/<publication>")
+@app.route("/",methods=['GET','POST'])
 def get_news():
     try:
-        query = request.args.get("publication")
+        query = request.form.get("publication")
         if not query or query.lower() not in RSS_FEEDS:
             publication = "abc"
         else:
@@ -25,4 +24,4 @@ def get_news():
 
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(port=5001, debug=True)
