@@ -7,22 +7,23 @@ RSS_FEEDS = {'bbc': 'http://feeds.bbci.co.uk/news/rss.xml', 'cnn': 'http://rss.c
 
 app = Flask(__name__)
 
-
 @app.route("/")
 @app.route("/<publication>")
 def get_news(publication="bbc"):
-    # return "no news is good news"
-    feed = feedparser.parse(RSS_FEEDS[publication])
-    first_article = feed['entries'][0]
-    return """<html>
-    <body>
-        <h1>{3} Headlines</h1>
-        <b>{0}</b> <br>
-        <i>{1}</i> <br>
-        <p>{2}</p>
-    </body>
-    </html>""".format(first_article.get("title"), first_article.get("published"), first_article.get("summary"),
-                      publication.upper())
+    try:
+        feed = feedparser.parse(RSS_FEEDS[publication])
+        first_article = feed['entries'][0]
+        return """<html>
+        <body>
+            <h1>{3} Headlines</h1>
+            <b>{0}</b> <br>
+            <i>{1}</i> <br>
+            <p>{2}</p>
+        </body>
+        </html>""".format(first_article.get("title"), first_article.get("published"), first_article.get("summary"),
+                          publication.upper())
+    except:
+        return "no news is good news - try /bbc, /cnn, /fox or /abc for the bad"
 
 
 if __name__ == '__main__':
