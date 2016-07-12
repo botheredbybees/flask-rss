@@ -9,7 +9,7 @@ If you want to reproduce the environment I used you'll need to start off with
 - virtualenv _`[sudo] pip install virtualenv`_
 - [Pycharm](https://www.jetbrains.com/pycharm/) community edition
 
-1. Create a new project and [set up a virtualenv](https://www.jetbrains.com/help/pycharm/2016.1/creating-virtual-environment.html) for it to run in
+1. Create a new project and [set up a virtual environment](https://www.jetbrains.com/help/pycharm/2016.1/creating-virtual-environment.html) for it to run in
 2. Add Flask to the project's virtualenv using the + icon on _`File - Settings - Project - Project Interpreter`_
 3. Install `feedparser` too
 
