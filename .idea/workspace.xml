@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f990269-da03-451d-86a8-f2207fd7923e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/headlines.py" afterPath="$PROJECT_DIR$/headlines.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
     </list>
     <ignored path="fask-rss.iws" />
@@ -31,8 +30,8 @@
       <file leaf-file-name="headlines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/headlines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="405">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -43,8 +42,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="135">
+              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -77,6 +76,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="using_POST" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -389,7 +393,21 @@
       <option name="project" value="LOCAL" />
       <updated>1468290730468</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added a form for choosing the news provider">
+      <created>1468291572476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1468291572476</updated>
+    </task>
+    <task id="LOCAL-00008" summary="select the current rss feed provider on the form">
+      <created>1468294219942</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1468294219942</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -433,7 +451,9 @@
     <MESSAGE value="added jinja template" />
     <MESSAGE value="Improved Jinja template" />
     <MESSAGE value="Linked to Flask by Example book" />
-    <option name="LAST_COMMIT_MESSAGE" value="Linked to Flask by Example book" />
+    <MESSAGE value="added a form for choosing the news provider" />
+    <MESSAGE value="select the current rss feed provider on the form" />
+    <option name="LAST_COMMIT_MESSAGE" value="select the current rss feed provider on the form" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -484,8 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/headlines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="405">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -494,8 +514,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="135">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
           <folding />
         </state>
       </provider>

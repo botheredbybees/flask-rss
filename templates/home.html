@@ -7,10 +7,10 @@
 <body>
     <h1>{{header}} Headlines</h1>
     <form>
-        <input type="radio" name="publication" value="bbc" /> BBC<br>
-        <input type="radio" name="publication" value="cnn" /> CNN<br>
-        <input type="radio" name="publication" value="fox" /> Fox<br>
-        <input type="radio" name="publication" value="abc" /> ABC Hobart<br>
+        <input type="radio" name="publication" value="bbc" {% if header == 'BBC' %}checked="checked"{% endif %}/> BBC<br>
+        <input type="radio" name="publication" value="cnn" {% if header == 'CNN' %}checked="checked"{% endif %}/> CNN<br>
+        <input type="radio" name="publication" value="fox" {% if header == 'FOX' %}checked="checked"{% endif %}/> Fox<br>
+        <input type="radio" name="publication" value="abc" {% if header == 'ABC' %}checked="checked"{% endif %}/> ABC Hobart<br><br>
         <input type="submit" value="Submit" />
     </form>
     <br><br>
