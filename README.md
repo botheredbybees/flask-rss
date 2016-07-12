@@ -1,7 +1,9 @@
 **Learning a bit about flask (and Pycharm)**
 
 This is a bit of a scratchpad for picking up some pycharm practice
-using flask the python web framework.
+using flask the python web framework. 
+
+For this project I'm working through one of the exercises in [Flask by Example](https://www.packtpub.com/web-development/flask-example)
 
 If you want to reproduce the environment I used you'll need to start off with
 - [Python](https://www.python.org/) (I'm using 3.4.3)
