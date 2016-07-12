@@ -6,6 +6,14 @@
 </head>
 <body>
     <h1>{{header}} Headlines</h1>
+    <form>
+        <input type="radio" name="publication" value="bbc" /> BBC<br>
+        <input type="radio" name="publication" value="cnn" /> CNN<br>
+        <input type="radio" name="publication" value="fox" /> Fox<br>
+        <input type="radio" name="publication" value="abc" /> ABC Hobart<br>
+        <input type="submit" value="Submit" />
+    </form>
+    <br><br>
     {% for article in articles %}
         <b><a href="{{article.link}}" target="_blank">{{article.title}}</a></b><br />
         <i>{{article.published}}</i><br/>
