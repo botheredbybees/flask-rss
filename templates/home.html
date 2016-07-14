@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{header}} Headlines</title>
+    <title>{{header}}</title>
 </head>
 <body>
     <h1>{{header}} Headlines</h1>
     <form>
-        <input type="radio" name="publication" value="bbc" {% if header == 'BBC' %}checked="checked"{% endif %}/> BBC<br>
-        <input type="radio" name="publication" value="cnn" {% if header == 'CNN' %}checked="checked"{% endif %}/> CNN<br>
-        <input type="radio" name="publication" value="fox" {% if header == 'FOX' %}checked="checked"{% endif %}/> Fox<br>
-        <input type="radio" name="publication" value="abc" {% if header == 'ABC' %}checked="checked"{% endif %}/> ABC Hobart<br><br>
+        {% for key, value in rssFeeds.items() %}
+            <input type="radio" name="publication" value="{{key}}" {% if header == key %}checked="checked"{% endif %}/> {{key}}<br>
+        {% endfor %}<br>
         <input type="submit" value="Submit" />
     </form>
     <br><br>
